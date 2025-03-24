@@ -6,15 +6,15 @@ Documentação na URL:  https://test-api.k6.io/
 
 execuç˜ão deve ser feita :
 
-``` k6 run exemplo1.js ``` 
+``` k6 run cenario/exemplo1.js ``` 
 
-``` k6 run exemplo2.js ``` 
+``` k6 run cenario/exemplo2.js ``` 
 
-``` k6 run exemplo3.js ``` 
+``` k6 run cenario/exemplo3.js ``` 
 
-``` k6 run exemplo4.js ``` 
+``` k6 run cenario/exemplo4.js ``` 
 
-``` k6 run exemplo5.js -e URL=https://test-api.k6.io/public ``` 
+``` k6 run cenario/exemplo5.js -e URL=https://test-api.k6.io/public ``` 
 
 ## Cenários 
 
@@ -112,11 +112,11 @@ k6 login cloud --token <token>
 
 executar via cloud:
 
-``` k6 cloud exemplo2.js ```
+``` k6 cloud cenario/exemplo2.js ```
 
 executar local para cloud:
 
-``` k6 run --out cloud exemplo2.js ```
+``` k6 run --out cloud cenario/exemplo2.js ```
 
 dash: https://adriastephanie.grafana.net/a/k6-app/runs/4205422?tab=thresholds
  
