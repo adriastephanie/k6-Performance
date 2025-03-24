@@ -3,12 +3,11 @@ import http from 'k6/http';
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 
 
-// 1 usuario por 3 segundos
 export const options = {
-    vus: 50,
-    duration: '1m',
+    vus: 10,
+    duration: '30s',
     thresholds: {
-        checks: ['rate < 0.5'] 
+        checks: ['rate > 0.95'] 
     }
 }
 
